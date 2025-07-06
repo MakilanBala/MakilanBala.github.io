@@ -1,0 +1,40 @@
+.site-header {
+    background: #000080;       /* Navy blue */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .site-header .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  .main-nav a {
+    margin-left: 24px;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  
+  .main-nav a:hover {
+    opacity: 0.8;
+  }
+  
+  .main-nav a.active {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,26 @@
+/* Ensure the gradient covers the full viewport */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Flex column that spans full viewport */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* Main content grows to fill space */
+  .main-content {
+    flex: 1;
+  }
+  /* Apply the gradient background */
+  body {
+    /* Fallback solid color */
+    background-color: #ce5307;
+    font-family: sans-serif;
+    color: var(--color-text);
+  }
+  
