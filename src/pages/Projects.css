@@ -1,0 +1,64 @@
+/* Page wrapper: same look & feel as .projects-gallery */
+.project-section {
+  background: navy;
+  border-radius: 16px;
+  width: 80%;
+  margin: 80px auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #ffffff;
+}
+
+/* Centered section title */
+.project-section .about-title {
+  color: var(--color-primary);
+  text-align: center;
+  margin: 0 0 24px;
+  padding-bottom: 16px;
+  font-size: 4rem;
+}
+
+/* Image */
+.project-image {
+  max-width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Paragraph text */
+.about-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #ddd;
+  text-align: center;
+}
+
+/* Change link color inside project section */
+.project-section a {
+  color: #FFCC00;           /* your custom color instead of blue */
+  text-decoration: none;    /* remove default underline */
+}
+
+.project-section a:hover {
+  color: #FFD700;           /* slightly lighter on hover */
+  text-decoration: underline;
+}
+
+/* If you want a wider layout on desktop */
+@media (min-width: 768px) {
+  .project-section {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .project-image {
+    flex: 1;
+    margin-right: 24px;
+  }
+  .about-text {
+    flex: 2;
+    text-align: left;
+  }
+}
